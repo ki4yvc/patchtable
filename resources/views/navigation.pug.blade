@@ -1,0 +1,19 @@
+nav
+  .nav-main
+    ul
+      li
+        a(href="#") Home
+      li
+        a(href="#") Inspiration
+      li
+        a(href="#") Tutorials
+      li
+        a(href="#") Freebies
+      li
+        a(href="#") Resources
+  .nav-user
+    ul
+      li
+        a(href="{{ url('/login') }}") Login
+      li
+        a(type="button" href="#" onclick="open_modal('Are you sure?', '{{ url('scout/'.$scoutmaster->id) }}', true, 'DELETE')") New User
