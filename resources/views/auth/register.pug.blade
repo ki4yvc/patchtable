@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    title Login
+    link( href="{{ asset('css/login.css') }}" rel="stylesheet" type="text/css")
+    link( href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css")
+    body
+      @include('navigation')
+      .container
+        h3 Register
+        form( method="POST" action="{{ route('register') }}")
+          {{ csrf_field() }}
+          .input-area
+            label Name
+            input( type="text" class="form-control" name="name")
+            label Email
+            input( type="email" class="form-control" name="email")
+            label Password
+            input( type="password" class="form-control" name="password")
+            label Confirm Password
+            input( type="password" class="form-control" name="password_confirmation")
+            button( type="submit") Register

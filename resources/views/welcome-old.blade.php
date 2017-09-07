@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <script src="{{ asset('js/Example.js') }}"></script>
 
         <!-- Styles -->
         <style>
@@ -81,7 +82,9 @@
                 <div class="title m-b-md">
                     Test
                 </div>
+                <div id="example">
 
+                </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>

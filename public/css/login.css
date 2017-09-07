@@ -2,3 +2,32 @@ body {
   margin: 0px;
   background-color: #c3cbcd;
 }
+.container {
+  @override background-color: white;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.container h3 {
+  text-align: center;
+}
+.container form {
+  border: 3px solid #f1f1f1;
+}
+.container form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container form button {
+  width: 100%;
+  padding: 14px 20px;
+}
